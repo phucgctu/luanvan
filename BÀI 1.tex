@@ -1,0 +1,86 @@
+\documentclass[12pt,a4paper]{book}
+\usepackage[utf8]{inputenc}
+\usepackage[english,vietnam]{babel}
+\usepackage{enumerate}
+\usepackage{amsmath}
+\usepackage[standard,thmmarks]{ntheorem}%thref,amsmath,hyperref
+\theoremstyle{plain}%Sử dụng phong cách plain để đánh số Định lý, chẳng hạn: Định lý 1, Định lý 2,...
+\theoremseparator {.}% Ngăn cách giữa Định lý và nội dung định lý bởi dấu chấm%
+\renewtheorem{theorem}{Định lý}
+\renewtheorem{proof}{Chứng minh}
+\renewtheorem{definition}{Định nghĩa}
+\renewtheorem{lemma}{Bổ đề}
+\theoremheaderfont{\normalfont\bfseries}% In ra chữ "Định lý": đậm, thẳng đứng.%
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\author{Đào Duy Phúc - MSSHV: M0719005}
+\title{HỌC TIN HỌC VỚI BẰNG PHẦN MỀN \LaTeX}
+\usepackage{fancyhdr}  %Tạo header và Footer
+\pagestyle{fancy}
+\lhead{\textbf{Đại học cần thơ}}
+\chead{\textit{Latex}}
+\rhead{\textit{Toán giải tích}}
+\lfoot{Đào Duy Phúc}
+\cfoot{\thepage} %đánh số trang%
+\setlength{\parindent}{0pt} % Tất cả các đoạn văn bản đề thục ra ngoài% 
+\begin{document}
+\selectlanguage{vietnam}
+\maketitle %Hiện tiêu đề%
+\chapter[chương 1:] {Phép tính vi tích phân hàm một biến}
+\section{khái niệm về đạo hàm}
+\section{Các phương pháp tính đạo hàm}
+\section{Vi phân}
+\fontsize{17pt}{40pt}\selectfont
+\textbf{Câu 2: Tạo các biểu thức}
+\fontsize{17pt}{40pt}\selectfont\\
+$ x\vee y\wedge z, \qquad x\cup y\cap z, \qquad x\circ y, \qquad A\subset B\subseteq C,\qquad A\backslash B $\\
+\textbf{Câu 3: Tạo ra đẳng thức sau:}$\qquad\displaystyle \sum_{x\in A}f(x)\stackrel{de f}{=}\displaystyle
+\sum _{x\in A\atop x\neq 0}f(x)$\\
+\textbf{Câu 4: Tạo ra mệnh đề}\\
+\begin{center}
+$\dfrac{f(x+\bigtriangleup x)-f(x)}{\bigtriangleup x}\longrightarrow f'(x)$ \mbox{khi} $ \bigtriangleup x\rightarrow0$\\
+\end{center}
+\textbf{Câu 5: Tạo ra các tích phân:}$\qquad\int\limits_a^b {f(x)dx = \left. {F\left( x \right)} \right|_a^b} $\\
+\textbf{Câu 6:} Tạo ra dạng: \qquad$\left\| {{u_i}} \right\| = 1,$ $\qquad{u_i}.{u_j} = 0$\qquad \mbox{nếu}\qquad $i \ne j$
+\textbf{Câu 7:} Tạo ra ma trận sau:\\
+\[\left[ {\begin{array}{*{20}{c}}
+{{a_{11}}}&{{a_{12}}}&{...}&{{a_{1n}}}\\
+{{a_{21}}}&{{a_{22}}}&{...}&{{a_{2n}}}\\
+ \vdots & \vdots & \vdots & \vdots \\
+{{a_{m1}}}&{{a_{m2}}}&{...}&{{a_{mn}}}
+\end{array}} \right]\]
+\textbf{Câu 8:} Tạo ra dạng sau:\\
+\begin{eqnarray}
+T\left( n \right) & \le & c\left( {{2^{\left[ {\lg n} \right]}} - {2^{\left[ {\lg n} \right]}}} \right)\nonumber\\
+ &\le & 3c \cdot {3^{\lg n}} \nonumber\\
+ & = & 3c{n^{\lg 3}}\nonumber\\
+ \nonumber
+\end{eqnarray}
+Câu 9: Dùng môi trường equation tạo ra dạng sau:\\
+\begin{equation}
+{x( {t,\tau ,\xi ,\eta })=  \bar x( {\tau  - t;\tau ,\xi ,\eta } ),
+\atop
+y( {t,\tau ,\xi ,\eta } ) = \bar  y( {\tau  - t;\tau ,\xi ,\eta } )},
+\qquad\qquad(\tau,\xi,\eta)\tag{6.1}
+\end{equation}
+\textbf{câu 10:} Dùng môi trường minipage tạo ra dạng sau:\\
+\begin{minipage}{8cm}
+Cho cung đường tròn $AB$ có phương trình $y = f\left( x \right)$  $\left( {a \le x \le b} \right)$, trong đó $f\left( x \right)$ có đạo hàm liên tục trên $\left[ {a,b} \right]$.\\
+Mặt tròn xoay tạo nên khi quay cung $AB$ quanh trục $Ox$ có diện tích cho bởi
+\end{minipage}
+\begin{minipage}[t]{5.2cm}
+\fbox{$S = 2\pi \int\limits_a^b {\left| {f\left( x \right)} \right|} \sqrt {1 + f'\left( x \right)} dx$}
+\end{minipage}
+\vspace{6pt}\underline{\textbf{Câu 10}}: Dùng môi trường minipage tạo ra dạng sau:\\
+
+\begin{minipage}{8cm}
+Cho cung đường tròn AB có phương trình $y=f(x) \hspace{6pt}(a\le x\le b),$ trong đó $f(x)$ có đạo hàm liên tục trên $[a,b].$\\
+Mặt tròn xoay tạo nên khi quay cung $AB$ quanh trục $Ox$ có diện tích cho bởi
+\end{minipage}
+\qquad\begin{minipage}[t]{5cm}
+\parbox{8cm}{
+\fbox{$S = 2\pi \int\limits_a^b {\left| {f\left( x \right)} \right|\sqrt {1 + f{'^2}} dx} $}
+}
+\end{minipage}
+\end{document}
